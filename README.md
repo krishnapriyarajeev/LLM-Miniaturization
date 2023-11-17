@@ -1,1 +1,1 @@
-# LLM-Miniaturisation
+# LLM-Miniaturization
