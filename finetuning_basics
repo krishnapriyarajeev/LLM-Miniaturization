@@ -1,0 +1,21 @@
+Why fine-tuning?
+1. More consistent outputs
+2. Reduces hallucinations
+3. Customizations
+4. Reduce unwanted info
+
+Steps to fine-tune:
+Choose a pre-trained model
+Choose a dataset
+Collect output of the model and calculate loss between expected output and model's output.
+Update model parameters to reduce loss using gradient descent and backpropogation.
+Repeat until model converges
+Fine-tuning is done
+
+Some imp points:
+Curate a high-quality dataset
+Preprocess your data
+Start with reasonable hyperparameters like a small learning rate, then refine from there.
+Monitor loss during fine-tuning to check if the model is learning properly.
+Use a holdout dev set to evaluate the fine-tuned model before finalizing.
+
