@@ -1,0 +1,14 @@
+Instruction Tuning:
+ Instruction tuning is a technique that allows pre-trained language models to learn
+ from input (natural language descriptions of the task) and response pairs, for example,
+ {"instruction": "Arrange the words in the given sentence to form a grammatically
+ correct sentence.", "input": "the quickly brown fox jumped", "output": "the brown
+ fox jumped quickly"}.
+
+Explanation Tuning:
+ Explanation tuning begins with instructions designed to elicit more careful reasoning. 
+ Some examples include “think step-by-step”, “generate detailed answers”, etc.
+ The primary objective of these system instructions is to extract rich demonstrations
+ of “Slow Thinking” from capable LLMs like GPT-4. They are then combined with user 
+ prompts from a vast and diverse set of tasks to yield a dataset of (system instruction,
+ user prompt, LLM answer) triplets. The student model is trained to predict the LLM answer from the other two inputs.
